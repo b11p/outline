@@ -225,7 +225,7 @@ export class Mailer {
           }
         : undefined,
       // Disable STARTTLS entirely when secure is set to false
-      ignoreTLS: !env.SMTP_SECURE,
+      ignoreTLS: false,
       tls: env.SMTP_SECURE
         ? env.SMTP_TLS_CIPHERS
           ? {
